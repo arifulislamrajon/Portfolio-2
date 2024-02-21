@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------------- Font Awesome cdn link ---------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---------------------- aso animation cdn link ---------------------->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!---------------------- swiper js css cdn link ---------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!---------------------- css file link ---------------------->
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio</title>
+</head> 
+<body>
+<!---------------------- header start ---------------------->
+    <header id="header">
+        <nav class="flex_between" id="nav">
+            <a href="index.html" class="logo">Inbio</a>
+
+            <div class="nav_group">
+                <ul class="nav_list">
+                    <li><a href="index.html" class="nav_link">Home</a></li>
+                    <li><a href="about.html" class="nav_link">About Me</a></li>
+                    <li><a href="work.html" class="nav_link">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav_link nav_button button">Contact Me</a></li>
+
+                    <div class="nav_close">
+                        <i class="fa fa-xmark"></i>
+                    </div>
+                </ul>
+                <!-- theme icon -->
+                <div>
+                    <i class="fa-regular fa-moon theme"></i>
+                </div>
+
+                <!-- menu icon -->
+                <div>
+                    <i class="fa fa-bars menu"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+<!---------------------- hero start ---------------------->
+    <main id="main">
+        <section class="hero section">
+            <div class="hero_left_content grid">
+                <div class="ractangle"></div>
+                <div class="perfil_container">
+                    <div class="perfil_content grid">
+                        <img src="./images/home-perfil.png" alt="img" class="hero_img">
+                    </div>
+                </div>
+            </div>
+            <div class="hero_right_content">
+                <div class="hero_data">
+                    <h1 class="hero_name">Ariful Islam</h1>
+                    <h2 class="hero_profession">Web & Visual Deisgner</h2>
+
+                    <div class="hero_social social_link">
+                        <a href="https://www.github.com" class="hero_social_link" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com" class="hero_social_link" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.whatsapp.com" class="hero_social_link" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <a href="" class="hero_button button" download="">Download Cv</a>
+            </div>
+        </section>
+    </main>
+
+<!---------------------- hero start ---------------------->
+    <section class="about ">
+        <h1 class="title about_title">My Personal <br> Information</h1>
+
+        <div class="about_container grid">
+            <div class="about_left_content">
+                <div>
+                    <img src="images/about-perfil.png" alt="img" class="about_img">
+                </div>
+            </div>
+
+            <div class="about_right_content">
+                <h1 class="about_name">Ariful Islam</h1>
+                <h2 class="about_profession">Web & Visual Designer</h2>
+                <p class="about_desc">Passionate about Creating <b>Web Pages</b> with <b>UI/UX User Interface</b>, I have years of experience and many clients are happy width the projects carried out.</p>
+                <a href="#" class="about_button button">Contact Me</a>
+
+                <div class="about_skills">
+                    <p class="about_skill_title">My Skills Are</p>
+
+                    <div class="about_skill_container">
+                        <a href="#"><img src="images/about-html.svg" alt="img" class="about_skill_img"></a>
+                        <a href="#"><img src="images/about-css.svg" alt="img" class="about_skill_img"></a>
+                        <a href="#"><img src="images/about-javascript.svg" alt="img" class="about_skill_img"></a>
+                        <a href="#"><img src="images/about-git.svg" alt="img" class="about_skill_img"></a>
+                        <a href="#"><img src="images/about-react.svg" alt="img" class="about_skill_img"></a>
+                        <a href="#"><img src="images/about-next-js.svg" alt="img" class="about_skill_img"></a>
+                        <a href="#"><img src="images/about-sass.svg" alt="img" class="about_skill_img"></a>
+                        <a href="#"><img src="images/about-tailwind-css.svg" alt="img" class="about_skill_img"></a>
+                        <a href="#"><img src="images/about-figma.svg" alt="img" class="about_skill_img"></a>
+                        <a href="#"><img src="images/about-sketch.svg" alt="img" class="about_skill_img"></a>
+                        <a href="#"><img src="images/about-photoshop.svg" alt="img" class="about_skill_img"></a>
+                        <a href="#"><img src="images/about-illustrator.svg" alt="img" class="about_skill_img"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!---------------------- services start ---------------------->
+    <section class="services section">
+        <h1 class="title">The Services <br> I Offer</h1>
+        <div class="serivces_container">
+            <article class="services_card" id="1">
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Developer</h2>
+                <p class="services_desc">
+                    Beautiful and enegant designs with interfaces that are intuitive, efficient and pleasant to use for the user.
+                </p>
+                <button class="services_button button">Know More</button>
+
+                <div class="services_modal">
+                    <div class="services_modal_content">
+                        <i class="fa-solid fa-xmark services_modal_close"></i>
+                        <h2 class="services_modal_title">Web Developer</h2>
+                        <ul class="services_modal_list">
+                            <li class="services_modal_item">Create professional and quality websites at the client's request.</li>
+                            <li class="services_modal_item">I do web design in prototypes.</li>
+                            <li class="services_modal_item">I position your website with advanced SEO.</li>
+                            <li class="services_modal_item">I solve performance problems on web pages.</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="services_card" id="2">
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>Web Designer</h2>
+                <p class="services_desc">
+                    Beautiful and enegant designs with interfaces that are intuitive, efficient and pleasant to use for the user.
+                </p>
+                <button class="services_button button">Know More</button>
+
+                <div class="services_modal">
+                    <div class="services_modal_content">
+                        <i class="fa-solid fa-xmark services_modal_close"></i>
+                        <h2 class="services_modal_title">Web Designer</h2>
+                        <ul class="services_modal_list">
+                            <li class="services_modal_item">Create professional and quality websites at the client's request.</li>
+                            <li class="services_modal_item">I do web design in prototypes.</li>
+                            <li class="services_modal_item">I position your website with advanced SEO.</li>
+                            <li class="services_modal_item">I solve performance problems on web pages.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="services_card" id="3">
+                <i class="fa-solid fa-film"></i>
+                <h2>Interfaces UI/UX</h2>
+                <p class="services_desc">
+                    Beautiful and enegant designs with interfaces that are intuitive, efficient and pleasant to use for the user.
+                </p>
+                <button class="services_button button">Know More</button>
+
+                <div class="services_modal">
+                    <div class="services_modal_content">
+                        <i class="fa-solid fa-xmark services_modal_close"></i>
+                        <h2 class="services_modal_title">Interfaces UI/UX</h2>
+                        <ul class="services_modal_list">
+                            <li class="services_modal_item">Create professional and quality websites at the client's request.</li>
+                            <li class="services_modal_item">I do web design in prototypes.</li>
+                            <li class="services_modal_item">I position your website with advanced SEO.</li>
+                            <li class="services_modal_item">I solve performance problems on web pages.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+   </section>
+
+<!---------------------- work start ---------------------->
+    <section class="work section">
+        <h1 class="title">My Most <br> Recent Works</h1>
+
+        <div class="work_container">
+            <article class="work_card">
+                <a href="#" target="_blank" class="work_link">
+                    <img src="images/work-1.png" alt="img" class="work_img">
+                    <i class="fa fa-arrow-circle-right work_icon"></i>
+                </a>
+
+                <h2 class="work_title">Creative Website</h2>
+                <span class="work_subtitle">Website Design</span>
+            </article>
+
+            <article class="work_card">
+                <a href="#" target="_blank" class="work_link">
+                    <img src="images/work-2.png" alt="img" class="work_img">
+                    <i class="fa fa-arrow-circle-right work_icon"></i>
+                </a>
+
+                <h2 class="work_title">Creative Website</h2>
+                <span class="work_subtitle">Website Design</span>
+            </article>
+
+            <article class="work_card">
+                <a href="#" target="_blank" class="work_link">
+                    <img src="images/work-3.png" alt="img" class="work_img">
+                    <i class="fa fa-arrow-circle-right work_icon"></i>
+                </a>
+
+                <h2 class="work_title">Awesome App</h2>
+                <span class="work_subtitle">App Design</span>
+            </article>
+
+            <article class="work_card">
+                <a href="#" target="_blank" class="work_link">
+                    <img src="images/work-4.png" alt="img" class="work_img">
+                    <i class="fa fa-arrow-circle-right work_icon"></i>
+                </a>
+
+                <h2 class="work_title">Awesome App</h2>
+                <span class="work_subtitle">App Design</span>
+            </article>
+
+            <article class="work_card">
+                <a href="#" target="_blank" class="work_link">
+                    <img src="images/work-5.png" alt="img" class="work_img">
+                    <i class="fa fa-arrow-circle-right work_icon"></i>
+                </a>
+
+                <h2 class="work_title">Interfce Design</h2>
+                <span class="work_subtitle">UI/UX</span>
+            </article>
+
+            <article class="work_card">
+                <a href="#" target="_blank" class="work_link">
+                    <img src="images/work-6.png" alt="img" class="work_img">
+                    <i class="fa fa-arrow-circle-right work_icon"></i>
+                </a>
+
+                <h2 class="work_title">Interfce Design</h2>
+                <span class="work_subtitle">UI/UX</span>
+            </article>
+        </div>
+    </section>
+
+<!---------------------- testimonial start ---------------------->
+    <section class="testimonial section">
+        <h1 class="title">What They Say <br> About Me?</h1>
+
+        <div class="testimonial_container swiper mySwiper">
+            <div class="testimonial_content swiper-wrapper">
+                <article class="testimonial_card grid swiper-slide">
+                        <div class="testimonial_border">
+                            <img src="images/testimonial-1.png" alt="img" class="testimonial_img">
+                        </div>
+
+                        <h2 class="testimonial_name">Jen Will</h2>
+                        <p class="testimonial_desc">
+                            I hired a project and the services were of quality, the 
+                            work delivered is of good content, excellent work.
+                        </p>
+                </article>
+
+                <article class="testimonial_card grid swiper-slide">
+                        <div class="testimonial_border">
+                            <img src="images/testimonial-2.png" alt="img" class="testimonial_img">
+                        </div>
+
+                        <h2 class="testimonial_name">Real Loz</h2>
+                        <p class="testimonial_desc">
+                            I hired a project and the services were of quality, the 
+                            work delivered is of good content, excellent work.
+                        </p>
+                </article>
+
+                <article class="testimonial_card grid swiper-slide">
+                        <div class="testimonial_border">
+                            <img src="images/testimonial-3.png" alt="img" class="testimonial_img">
+                        </div>
+
+                        <h2 class="testimonial_name">Mey Doth</h2>
+                        <p class="testimonial_desc">
+                            I hired a project and the services were of quality, the 
+                            work delivered is of good content, excellent work.
+                        </p>
+                </article>
+
+                <article class="testimonial_card grid swiper-slide">
+                        <div class="testimonial_border">
+                            <img src="images/testimonial-4.png" alt="img" class="testimonial_img">
+                        </div>
+
+                        <h2 class="testimonial_name">Celi Phet</h2>
+                        <p class="testimonial_desc">
+                            I hired a project and the services were of quality, the 
+                            work delivered is of good content, excellent work.
+                        </p>
+                </article>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+   </section>
+
+<!---------------------- contact start ---------------------->
+   <section class="contact section flex_between" id="contact">
+        <h1 class="title contact_title">Let's Talk <br> About Your Project</h1>
+
+        <a href="Contact.html" class="contact_button button">Contact Me</a>
+   </section>
+
+<!---------------------- footer start ---------------------->
+    <footer>
+        <section class="section footer_container">
+            <div class="footer_content flex_between">
+                <a href="Index.html" class="footer_logo">INBIO</a>
+
+                <ul class="footer_links">
+                    <li><a href="About.html" class="footer_link">About Me</a></li>
+                    <li><a href="Work.html" class="footer_link">Portfolio</a></li>
+                    <li><a href="Contact.html" class="footer_link">Contact Me</a></li>
+                </ul>
+
+                <div class="footer_social">
+                    <a href="https://www.facebook.com" target="_blank" class="footer_social_link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="footer_social_link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" class="footer_social_link"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" class="footer_social_link"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <span class="footer_copy">
+                &#169; All Rights Reserved By Ariful Islam
+            </span>
+        </section>
+   </footer>
+
+<!---------------------- bottom to top ---------------------->
+   <a href="#main" class="scroll_up" data-aos="fade-up">
+    <i class="fa fa-arrow-up"></i>
+    </a>
+
+<!---------------------- aso animation cdn link ---------------------->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
+<!---------------------- swiper js script cdn link ---------------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!---------------------- js file link ---------------------->
+   <script src="script.js"></script>
+</body>
+</html>
